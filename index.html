@@ -12,8 +12,32 @@
         <section class="container">
             <h1>Listado de Super Héroes</h1>
 
+            <button id="mostrar-ocultar" class="btn btn-danger mb-2">Ocultar</button>
+
             <div class="d-flex">
-                <div class="col-3">Filtros</div>
+                <div class="col-3 pe-3" id="filtros">
+                    
+                    <div class="card">
+                        <div class="card-body">
+                          <h6>Filtros de búsqueda:</h6>
+
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Ocupación</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                        </div>
+                      </div>
+                </div>
                 <div class="col">
                     <table id="listado-super-heroes" class="table table-bordered">
                         <thead>

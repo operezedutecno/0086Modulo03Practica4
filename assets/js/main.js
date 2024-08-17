@@ -45,4 +45,14 @@ $(function() {
             listarSuperHeroes(superHeroes)
         }
     })
+
+    $("#mostrar-ocultar").click(function() {
+        if($("#filtros").hasClass("d-none")) { // Lógica para mostrar
+            $("#filtros").removeClass("d-none")
+            $("#mostrar-ocultar").removeClass("btn-success").addClass("btn-danger").html("Ocultar")
+        } else { // Lógica para ocultar
+            $("#filtros").addClass("d-none")
+            $("#mostrar-ocultar").removeClass("btn-danger").addClass("btn-success").html("Mostrar")
+        }
+    })
 })
